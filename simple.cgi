@@ -18,20 +18,23 @@
 # SERVER_NAME:       The server's hostname or IP Address.
 # SERVER_PORT:       The port of the server.
 
-# Add a content type and a blank line
-echo "X-COMP-490: ${USER}"
+
 echo "Content-type: text/html"
 echo ""
+
 echo "Enter in a Query String in order to navigate web pages"
+echo ""
 echo "www.csun.edu/~agn53527/cgi-bin/simple.cgi?csun to go to the csun.edu homepage"
+echo ""
 echo "Here are the system's environment variables..."
+echo ""
 echo "<pre> $(env) </pre>"
-if [ "$QUERY_STRING" == "index.html" ] ; then
+if [ "$QUERY_STRING" == "index.html" ];  then
    echo "Taking you to index.html..."
    /usr/bin/curl -s "www.csun.edu/~agn53527/"
-fi
-if [ "${QUERY_STRING}" == "csun" ] ; then
+elif [ "${QUERY_STRING}" == "csun" ] ; then
    echo "Taking you to www.csun.edu"
    /usr/bin/curl -s "www.csun.edu"
+else
+   echo "That Query String doesn't work, try csun or index.html"
 fi
-
