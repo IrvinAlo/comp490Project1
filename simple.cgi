@@ -22,7 +22,13 @@
 echo "X-COMP-490: ${USER}"
 echo "Content-type: text/plain"
 echo ""
-
-if [ -n "${QUERY_STRING}" ] ; then
-   cat  ./${QUERY_STRING}
+echo "Hello World"
+echo "PATH=$PATH"
+if ["$QUERY_STRING" == "index.html"]; then
+	echo "Taking you to index.html..."
+	/usr/bin/curl -s "www.csun.edu/~agn53527/"
+fi
+if ["${QUERY_STRING}" == "csun"]; then	
+	/usr/bin/curl -s "www.csun.edu"
+	echo "QUERY_STRING=$QUERY_STRING"
 fi
