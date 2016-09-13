@@ -30,4 +30,8 @@ if [ "$QUERY_STRING" == "index.html" ] ; then
    echo "Taking you to index.html..."
    /usr/bin/curl -s "www.csun.edu/~agn53527/"
 fi
+if [ "${QUERY_STRING}" == "csun" ] ; then
+   echo "Taking you to www.csun.edu"
+   /usr/bin/curl -s "www.csun.edu"
+fi
 
