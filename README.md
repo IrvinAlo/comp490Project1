@@ -10,6 +10,9 @@ It will display index.html if the query string is "index.html"
 Third Update
 The system now prints instructions and the system environment variables
 
+Fourth Update
+Restructured repo so that the project can be driectly deployed in public_html
+
 Project Complete
 The URL http://www.csun.edu/~agn53527/cgi-bin/simple.cgi will run the program where it will display instructions and enviroment variables
 By passing in a query string you can navigate to different webpages, for example
