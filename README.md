@@ -6,3 +6,6 @@ Second Update
 the cgi program now responds to get requests via query strings
 It will display www.csun.edu if the query string is "csun"
 It will display index.html if the query string is "index.html"
+
+Third Update
+The system now prints instructions and the system environment variables
