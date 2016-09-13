@@ -21,3 +21,5 @@ With Query String "csun" the will display www.csun.edu after the environment var
 
 http://www.csun.edu/~agn53527/cgi-bin/simple.cgi?index.html 
 Query String: "index.html" will take you to a html page I made when I got bored
+
+The user will be alerted to not recognized Query Strings
