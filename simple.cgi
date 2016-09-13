@@ -19,7 +19,6 @@
 # SERVER_PORT:       The port of the server.
 
 # Add a content type and a blank line
-echo "X-COMP-490: ${USER}"
 echo "Content-type: text/html"
 echo ""
 echo "Enter in a Query String in order to navigate web pages"
